@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kC0-ch-FZl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Freedom Photostudio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FreedomViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="U0n-0p-Cwq">
+                                <rect key="frame" x="83.5" y="258.5" width="247.5" height="379"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gS8-uD-hsJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="247.5" height="44.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Зал &quot;Баланс&quot;">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="Зал &quot;Баланс&quot;">
+                                            <backgroundConfiguration key="background" cornerRadius="15">
+                                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hDo-md-0se" kind="show" id="u04-gg-47b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJY-Nh-daj">
+                                        <rect key="frame" x="0.0" y="111.5" width="247.5" height="44.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Зал &quot;Гэтсби&quot;">
+                                            <backgroundConfiguration key="background" cornerRadius="15">
+                                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="aAr-H6-zCh" kind="show" id="ghH-LY-epP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-6q-i2N">
+                                        <rect key="frame" x="0.0" y="223" width="247.5" height="44.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Зал &quot;Фэнтази&quot;">
+                                            <backgroundConfiguration key="background" cornerRadius="15">
+                                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BMc-Gm-K5z" kind="show" id="jBH-eU-bfG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-6G-pBe">
+                                        <rect key="frame" x="0.0" y="334.5" width="247.5" height="44.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Зал &quot;Simple&quot;">
+                                            <backgroundConfiguration key="background" cornerRadius="15">
+                                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="7iV-qV-6tH" kind="show" id="Tp8-sO-9DX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="U0n-0p-Cwq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ALV-gG-d2p"/>
+                            <constraint firstItem="U0n-0p-Cwq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x3c-ld-Kfu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Freedom Photostudio" id="OR8-Zi-UfQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--Gatsby View Controller-->
+        <scene sceneID="3wg-UX-jyh">
+            <objects>
+                <pageViewController storyboardIdentifier="GatsbyViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="aAr-H6-zCh" customClass="GatsbyViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2zQ-8y-LUz"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Sv-jI-Zkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="80"/>
+        </scene>
+        <!--Simple View Controller-->
+        <scene sceneID="ixg-ne-Pa4">
+            <objects>
+                <pageViewController storyboardIdentifier="SimpleViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7iV-qV-6tH" customClass="SimpleViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8MY-br-JLV"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0p-eq-r17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="847"/>
+        </scene>
+        <!--Fantasy View Controller-->
+        <scene sceneID="Ngg-hQ-edK">
+            <objects>
+                <pageViewController storyboardIdentifier="FantasyViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="BMc-Gm-K5z" customClass="FantasyViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lc0-kq-UGL"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3c-93-jIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="846"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EYd-Cs-q55">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kC0-ch-FZl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sko-Xa-9xo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="31"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LgZ-BW-0UH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IL9-5D-Hbs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+        <!--Balance View Controller-->
+        <scene sceneID="Rub-22-1kj">
+            <objects>
+                <pageViewController storyboardIdentifier="BalanceViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hDo-md-0se" customClass="BalanceViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rae-Ee-Sek"/>
+                    <connections>
+                        <segue destination="4nD-7Y-ruV" kind="show" identifier="balanceSegue" id="Zzx-7L-8Os"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4S-Ld-qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="-669"/>
+        </scene>
+        <!--Balance ContentVC-->
+        <scene sceneID="sFj-i9-lG9">
+            <objects>
+                <viewController storyboardIdentifier="BalanceContentVC" id="4nD-7Y-ruV" customClass="BalanceContentVC" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1zR-x3-Ksh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I0M-MI-8VC">
+                                <rect key="frame" x="20" y="88" width="374" height="507"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I0M-MI-8VC" secondAttribute="height" multiplier="374:507" id="C0C-Rr-FR6"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-3Z-rUs">
+                                <rect key="frame" x="149" y="569" width="116" height="26"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0S-iM-P8K">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DLx-xX-IKJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8WM-4O-Oj8"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qCT-Th-9fK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I0M-MI-8VC" firstAttribute="leading" secondItem="qCT-Th-9fK" secondAttribute="leading" constant="20" id="4dN-vO-8zs"/>
+                            <constraint firstItem="qCT-Th-9fK" firstAttribute="trailing" secondItem="I0M-MI-8VC" secondAttribute="trailing" constant="20" id="PWn-tL-QuA"/>
+                            <constraint firstItem="1pE-3Z-rUs" firstAttribute="centerX" secondItem="1zR-x3-Ksh" secondAttribute="centerX" id="cRr-US-W6F"/>
+                            <constraint firstItem="1pE-3Z-rUs" firstAttribute="bottom" secondItem="I0M-MI-8VC" secondAttribute="bottom" id="lOT-0V-kQm"/>
+                            <constraint firstItem="I0M-MI-8VC" firstAttribute="centerX" secondItem="1zR-x3-Ksh" secondAttribute="centerX" id="pwr-e6-Iak"/>
+                            <constraint firstItem="I0M-MI-8VC" firstAttribute="top" secondItem="qCT-Th-9fK" secondAttribute="top" id="x5F-LC-6md"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fJK-SO-BLj"/>
+                    <connections>
+                        <outlet property="imageView" destination="I0M-MI-8VC" id="pAl-Z8-BMr"/>
+                        <outlet property="pageControl" destination="1pE-3Z-rUs" id="14t-NP-twD"/>
+                        <outlet property="scrollView" destination="j0S-iM-P8K" id="ERP-Yb-Iu0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6s-po-8l1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="-670"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
