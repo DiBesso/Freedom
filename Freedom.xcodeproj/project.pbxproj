@@ -7,33 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A414844727E5C9CC00A39589 /* HallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844627E5C9CC00A39589 /* HallViewController.swift */; };
+		A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844827E5CBE400A39589 /* HallCollectionView.swift */; };
+		A414844B27E5CD8B00A39589 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844A27E5CD8B00A39589 /* Model.swift */; };
+		A414844D27E5DAFD00A39589 /* HallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */; };
 		A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */; };
 		A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */; };
-		A4F3F24A27DF763F00C66DA1 /* FreedomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24927DF763F00C66DA1 /* FreedomViewController.swift */; };
 		A4F3F24D27DF763F00C66DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F3F24B27DF763F00C66DA1 /* Main.storyboard */; };
 		A4F3F24F27DF764200C66DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F3F24E27DF764200C66DA1 /* Assets.xcassets */; };
 		A4F3F25227DF764200C66DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F3F25027DF764200C66DA1 /* LaunchScreen.storyboard */; };
-		A4F3F25C27DF964E00C66DA1 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F25B27DF964E00C66DA1 /* BalanceViewController.swift */; };
-		A4F3F25E27DF967800C66DA1 /* GatsbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F25D27DF967800C66DA1 /* GatsbyViewController.swift */; };
-		A4F3F26027DF969F00C66DA1 /* FantasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F25F27DF969E00C66DA1 /* FantasyViewController.swift */; };
-		A4F3F26227DF96BC00C66DA1 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F26127DF96BC00C66DA1 /* SimpleViewController.swift */; };
-		A4F3F26427DFA57E00C66DA1 /* BalanceContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F26327DFA57E00C66DA1 /* BalanceContentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A414844627E5C9CC00A39589 /* HallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallViewController.swift; sourceTree = "<group>"; };
+		A414844827E5CBE400A39589 /* HallCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionView.swift; sourceTree = "<group>"; };
+		A414844A27E5CD8B00A39589 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4F3F24227DF763F00C66DA1 /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4F3F24927DF763F00C66DA1 /* FreedomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomViewController.swift; sourceTree = "<group>"; };
 		A4F3F24C27DF763F00C66DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4F3F24E27DF764200C66DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F3F25127DF764200C66DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4F3F25327DF764200C66DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4F3F25B27DF964E00C66DA1 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
-		A4F3F25D27DF967800C66DA1 /* GatsbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatsbyViewController.swift; sourceTree = "<group>"; };
-		A4F3F25F27DF969E00C66DA1 /* FantasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyViewController.swift; sourceTree = "<group>"; };
-		A4F3F26127DF96BC00C66DA1 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
-		A4F3F26327DFA57E00C66DA1 /* BalanceContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceContentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +64,10 @@
 			children = (
 				A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */,
 				A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */,
-				A4F3F24927DF763F00C66DA1 /* FreedomViewController.swift */,
-				A4F3F25B27DF964E00C66DA1 /* BalanceViewController.swift */,
-				A4F3F25D27DF967800C66DA1 /* GatsbyViewController.swift */,
-				A4F3F25F27DF969E00C66DA1 /* FantasyViewController.swift */,
-				A4F3F26127DF96BC00C66DA1 /* SimpleViewController.swift */,
-				A4F3F26327DFA57E00C66DA1 /* BalanceContentVC.swift */,
+				A414844627E5C9CC00A39589 /* HallViewController.swift */,
+				A414844827E5CBE400A39589 /* HallCollectionView.swift */,
+				A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */,
+				A414844A27E5CD8B00A39589 /* Model.swift */,
 				A4F3F24B27DF763F00C66DA1 /* Main.storyboard */,
 				A4F3F24E27DF764200C66DA1 /* Assets.xcassets */,
 				A4F3F25027DF764200C66DA1 /* LaunchScreen.storyboard */,
@@ -153,14 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F3F25E27DF967800C66DA1 /* GatsbyViewController.swift in Sources */,
-				A4F3F24A27DF763F00C66DA1 /* FreedomViewController.swift in Sources */,
+				A414844D27E5DAFD00A39589 /* HallCollectionViewCell.swift in Sources */,
+				A414844B27E5CD8B00A39589 /* Model.swift in Sources */,
 				A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */,
-				A4F3F26427DFA57E00C66DA1 /* BalanceContentVC.swift in Sources */,
 				A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */,
-				A4F3F25C27DF964E00C66DA1 /* BalanceViewController.swift in Sources */,
-				A4F3F26227DF96BC00C66DA1 /* SimpleViewController.swift in Sources */,
-				A4F3F26027DF969F00C66DA1 /* FantasyViewController.swift in Sources */,
+				A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */,
+				A414844727E5C9CC00A39589 /* HallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
