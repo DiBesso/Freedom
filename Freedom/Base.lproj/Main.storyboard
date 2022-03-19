@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Баланс-->
+        <!--Hall View Controller-->
         <scene sceneID="UCJ-L1-b0A">
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="s3q-7E-25F" customClass="HallViewController" customModule="Freedom" sceneMemberID="viewController">
@@ -18,9 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="Rpe-rd-ZWn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Баланс" id="v3Z-Mx-YdU">
-                        <barButtonItem key="backBarButtonItem" title="Freedom" id="eX1-L3-ELY"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="v3Z-Mx-YdU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVo-Y9-4F4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +32,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cRn-fD-tZY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="50"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
