@@ -11,6 +11,11 @@
 		A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844827E5CBE400A39589 /* HallCollectionView.swift */; };
 		A414844B27E5CD8B00A39589 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844A27E5CD8B00A39589 /* Model.swift */; };
 		A414844D27E5DAFD00A39589 /* HallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */; };
+		A423D63727F60BE700EB15A2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63627F60BE700EB15A2 /* ProfileViewController.swift */; };
+		A423D63927F60C2A00EB15A2 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */; };
+		A423D63B27F60D0900EB15A2 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63A27F60D0900EB15A2 /* BookingViewController.swift */; };
+		A423D63D27F60D4B00EB15A2 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */; };
+		A423D63F27F60FB200EB15A2 /* FreedomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63E27F60FB200EB15A2 /* FreedomTabBarController.swift */; };
 		A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */; };
 		A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */; };
 		A4F3F24D27DF763F00C66DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F3F24B27DF763F00C66DA1 /* Main.storyboard */; };
@@ -23,6 +28,11 @@
 		A414844827E5CBE400A39589 /* HallCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionView.swift; sourceTree = "<group>"; };
 		A414844A27E5CD8B00A39589 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionViewCell.swift; sourceTree = "<group>"; };
+		A423D63627F60BE700EB15A2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A423D63A27F60D0900EB15A2 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		A423D63E27F60FB200EB15A2 /* FreedomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomTabBarController.swift; sourceTree = "<group>"; };
 		A4F3F24227DF763F00C66DA1 /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A423D63427F6050B00EB15A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A414844A27E5CD8B00A39589 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A423D64027F60FC300EB15A2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A423D63E27F60FB200EB15A2 /* FreedomTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		A4F3F23927DF763F00C66DA1 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +93,12 @@
 				A414844627E5C9CC00A39589 /* HallViewController.swift */,
 				A414844827E5CBE400A39589 /* HallCollectionView.swift */,
 				A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */,
-				A414844A27E5CD8B00A39589 /* Model.swift */,
+				A423D63627F60BE700EB15A2 /* ProfileViewController.swift */,
+				A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */,
+				A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */,
+				A423D63A27F60D0900EB15A2 /* BookingViewController.swift */,
+				A423D64027F60FC300EB15A2 /* TabBar */,
+				A423D63427F6050B00EB15A2 /* Models */,
 				A4F3F24B27DF763F00C66DA1 /* Main.storyboard */,
 				A4F3F24E27DF764200C66DA1 /* Assets.xcassets */,
 				A4F3F25027DF764200C66DA1 /* LaunchScreen.storyboard */,
@@ -147,10 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A423D63D27F60D4B00EB15A2 /* RulesViewController.swift in Sources */,
 				A414844D27E5DAFD00A39589 /* HallCollectionViewCell.swift in Sources */,
+				A423D63B27F60D0900EB15A2 /* BookingViewController.swift in Sources */,
 				A414844B27E5CD8B00A39589 /* Model.swift in Sources */,
 				A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */,
 				A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */,
+				A423D63F27F60FB200EB15A2 /* FreedomTabBarController.swift in Sources */,
+				A423D63727F60BE700EB15A2 /* ProfileViewController.swift in Sources */,
+				A423D63927F60C2A00EB15A2 /* ContactsViewController.swift in Sources */,
 				A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */,
 				A414844727E5C9CC00A39589 /* HallViewController.swift in Sources */,
 			);
