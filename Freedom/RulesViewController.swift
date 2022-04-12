@@ -7,23 +7,32 @@
 
 import UIKit
 
-class RulesViewController: UIViewController {
-
+class RulesViewController: UIViewController, UITextViewDelegate {
+    @IBOutlet weak var rulesTittle: UILabel!
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
+        textView.delegate = self
+        
+        setupTextView()
+        setupLabel()
+    }
+    func setupLabel() {
+        rulesTittle.textAlignment = .center
+        rulesTittle.text = "Правила фотостудии"
+        rulesTittle.font = UIFont(name: "Copperplate-Bold", size: 28)
+        rulesTittle.textColor = .white
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupTextView () {
+        textView.backgroundColor = self.view.backgroundColor
+        textView.font = UIFont(name: "Copperplate", size: 20)
+        textView.isEditable = false
+        textView.textColor = .white
     }
-    */
-
+   
 }

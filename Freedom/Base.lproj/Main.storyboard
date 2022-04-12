@@ -22,29 +22,129 @@
                     <tabBarItem key="tabBarItem" title="Freedom" id="tiP-6t-Vaw">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="v3Z-Mx-YdU"/>
+                    <navigationItem key="navigationItem" title="Freedom" id="v3Z-Mx-YdU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVo-Y9-4F4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3589.8550724637685" y="79.6875"/>
         </scene>
-        <!--Item-->
+        <!--Правила-->
         <scene sceneID="Dwt-2n-2sx">
             <objects>
                 <viewController id="WBo-mG-RHa" customClass="RulesViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRo-gP-1tb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentInsetAdjustmentBehavior="scrollableAxes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2fO-df-SLp">
+                                <rect key="frame" x="10" y="117" width="394" height="696"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Правила являются публичной офертой. Любое лицо с момента бронирования помещения Фотостудии либо фактического начала пользования помещениями Фотостудии признается совершившим акцепт публичной оферты в полном объёме и обязуется следовать Правилам.
+
+ОСНОВНЫЕ ПОЛОЖЕНИЯ.
+- студия работает по 100% предоплате;
+- вход в студию только в сменной обуви;
+- запрещено употреблять напитки и ЛЮБУЮ еду;
+- запрещено прыгать на мебели;
+- запрещено находиться в состоянии алкогольного и наркотического опьянения;
+- съёмка с животными производится по согласованию с администрацией заблаговременно;
+- в зале без доплаты может находится до 7 человек включая детей и фотографа, для свадебной фотосессии количество человек в зале без доплаты 5;
+- АРЕНДНОЕ ВРЕМЯ 55 минут. Остальное время необходимо потратить на наведение порядка, переодевание и сбор вещей; Администратор заходит в зал за 5 минут для оценки его состояния.
+- арендатор несет ответственность за безопасность и общую дисциплину прибывших вместе с ним посетителей; 
+В СЛУЧАЕ НАРУШЕНИЯ ПРАВИЛ Администрация Фотостудии оставляет за собой право:
+- удалить нарушителя с территории Фотостудии без возврата оплаченного времени бронирования и установить для нарушителя запрет на дальнейшее посещение Фотостудии;
+- при нанесении Фотостудии материального ущерба Арендатор обязан возместить на месте стоимость ущерба. При отказе по каким-либо причинам возместить убыток на месте или оплатить счет штрафа, сотрудники Фотостудии незамедлительно обращаются в полицию.
+
+СВАДЕБНЫЕ ФОТОСЕСИИ.
+Для того, чтобы ваша съемка прошла в комфортных условиях и без лишних волнений в столь важный день, ознакомьтесь пожалуйста, с правилами для СВАДЕБНЫХ ФОТОСЕСИЙ в нашей фотостудии:
+- Для свадебной фотосессии в зале без доплаты одновременно может находится 5 человек, включая детей и фотографа/видеографа (учитываются все люди заходящие в зал в течении вашей съёмки). Свыше 5ти человек в зале - доплата 100 руб.чел. Максимальное количество в зале для фотосъемки: 15 человек, свыше 15 чел. в зал не допускаются.
+- Все прибывшие с вами гости проходят вместе с вами в зал или ожидают вас за пределами фотостудии, а также не создают неудобств гостям находящимся в гримерке и во втором зале.
+
+- ❗ОСОБО ОБРАЩАЕМ ВАШЕ ВНИМАНИЕ❗Протереть обувь нашими салфетками могут ТОЛЬКО жених и невеста, всем остальным гостям необходимо разуться (т.е пройти в носочках или обуть наши бесплатные одноразовые тапочки или принести с собой сменную обувь). ✅Убедительная просьба донести данную информацию до ваших гостей заранее.
+- С момента въезда на территорию завода, на которой расположена фотостудия, бронирующий (тот на чье имя у фотостудии стоит бронь) несет полную ответственность (и материальную в том числе) за действия прибывших с ним людей, т.е. и на улице, если гости ждут вас там и в помещении фотостудии.
+- Категорически запрещено распитие спиртных напитков в залах и на территории фотостудии
+- Гости в состоянии алкогольного опьянения и в случае вызывающего поведения могут стать причиной прекращения вашей аренды без возврата оплаты.
+
+АРЕНДА ФОТОСТУДИИ
+Аренда съемочного зала осуществляется по предварительной записи и после подтверждения бронирования по указанному Вами контактному телефону или в ЛС Вконтакте.
+Аренда съемочного зала осуществляется по предоплате. Предоплату можно перевести на карту СБЕРБАНКА (реквизиты по запросу) или лично привезти в студию, предварительно позвонив, чтобы администратор был на месте.
+Администрация фотостудии оставляет за собой право отказа в предоставлении фотостудии лицу, систематически нарушающему сроки/правила работы и/или не явившегося единожды к забронированному времени в фотостудию.
+
+РАСЧЕТ ВРЕМЕНИ АРЕНДЫ 
+Началом аренды студии считается время, которое Вы забронировали, а НЕ фактическое время начала съемки. 
+В случае если после зарезервированного арендатором времени студия свободна, Вы можете продлить съёмочное время, оплатив дополнительно аренду по факту проведённого в студии времени. Перед началом съёмки уточните у администратора о данной возможности. 
+Шаг тарификации при продлении аренды – 30 минут. Это значит, что если Вы продлеваете съёмку на 15 минут, то оплата будет как за полчаса. 
+Если студия зарезервирована следующим клиентом, то Вы обязаны покинуть студию не позже арендованного времени. 
+Освободить зал необходимо за 5 минут до окончания последнего часа. При досрочном завершении съемки, забронированное время оплачивается полностью. 
+Временем окончания аренды считается время, когда арендатор покидает студию, а не когда заканчивает съемку. И в это время Вы должны включить время на уборку зала после себя. Уборка зала это - выключить оборудование, и поставить его на место, мебель которую передвигали, передвинуть обратно, а также положить реквизит и декор на свои места. И только после этого, вовремя, покинуть зал. 
+Помните, что после Вас в студии будут работать такие же люди, как и Вы, и они так же хотят войти вовремя в чистую студию. Относитесь с уважением к Вашим коллегам. 
+
+ПРЕДОПЛАТА 
+Студия работает по 100% предоплате. 
+Предоплату необходимо внести В ТЕЧЕНИИ СУТОК после заявленной брони , в противном случае время за вами не закреплено. 
+Предоплату можно внести карту СБЕРБАНКА (реквизиты по запросу) или при личном посещении студии. В случае вашей не явки на съемку предоплата не возвращается и не переносится на другой день. Информация об отмене/переносе/уменьшении времени аренды: https://vk.com/topic-48035482_28866494 
+НЕВНЕСЕНИЕ ПРЕДОПЛАТЫ НЕ СНИМАЕТ С ВАС ОТВЕТСТВЕННОСТИ ПОЗВОНИТЬ И УВЕДОМИТЬ СТУДИЮ ОБ ОТМЕНЕ. 
+
+ОТКАЗ ОТ АРЕНДЫ. 
+Отмены принимаются только с номера телефона, указанного в брони или сообщеним в вк со страницы бронирующего. 
+Отмена/уменьшение/перенос одного часа брони: 
+Отменить часовую бронь с полным возвратом денежных средств возможно не менее чем за 7 дней до предполагаемой даты съемки (тоже самое касаемо подарочных сертификатов аренды и фотосъемки). При отмене брони менее чем за 7 дней полная сумма предоплаты возвращается в том случае, если студия успевает найти вам замену на ваше время и оно оплачивается. 
+При отмене/уменьшении/переносе брони: 
+- менее чем за 7 дней штраф 50%, 
+- менее 72 часов – 100%. 
+- менее чем за 24 часа или вовсе не приходите, вы обязаны оплатить 100% стоимости забронированного времени. 
+Отмена/уменьшение/перенос броней от 2х часов: 
+Отмена 2х часовой оплаченной брони с полным возвратом средств возможна только за 10 дней до даты съёмки, от 3х часов с внесенной предоплатой только за 14 дней до даты съёмки. 
+В случае неуплаты последующие записи только по 100% предоплате или занесение в черный список.
+
+ГРИМЕРКА
+У нас есть 3 рабочих гримерных места. Гримерная не предназначена для переодевания. Переодеться вы можете в свое забронированное время в зале. Места проходные, т.е. помещение не отдельное, установлены лампы дневного света и зеркала, есть гладильная доска, утюг и отпариватель.
+Стоимость гримерной:
+С 9:00 до 22:00 стоимость часа 200 руб., если параллельно нет съёмок в любом из залов.
+9:00 или после 22:00 стоимость часа 500 руб., если параллельно нет съемок в любом из залов.
+Если Вам необходимо дополнительное время для создания Вашего образа, сообщите об этом администратору заблаговременно.
+Убедительно просим в гримерную приходить без группы поддержки!
+
+ПРАВИЛА ИСПОЛЬЗОВАНИЯ ОБОРУДОВАНИЯ 
+В случае необходимости администратор всегда готов оказать Вам помощь. Но помните, что администратор не является вашим ассистентом на съемке, поэтому рассчитывайте ваше рабочее время с учетом этих возможностей. 
+За порчу и поломку студийного оборудования и аксессуаров арендатор несёт полную материальную ответственность и возмещает убытки в размере и объёме, по согласованию с администрацией студии. 
+В случаях порчи оборудования, а конкретно студийных вспышек, арендатор возмещает полную стоимость согласно цены на текущий день. По окончании съёмки оборудование в обязательном порядке проверяется администратором на его целостность и работоспособность. 
+
+НЕЗНАНИЕ ПРАВИЛ НЕ ОСВОБОЖДАЕТ ВАС ОТ ОТВЕТСТВЕННОСТИ.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-s7-fAP">
+                                <rect key="frame" x="10" y="88" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="j81-r7-24K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2fO-df-SLp" firstAttribute="trailing" secondItem="j81-r7-24K" secondAttribute="trailing" constant="-10" id="Exd-1o-szW"/>
+                            <constraint firstItem="7nc-s7-fAP" firstAttribute="top" secondItem="j81-r7-24K" secondAttribute="top" id="PhN-lU-ieZ"/>
+                            <constraint firstItem="j81-r7-24K" firstAttribute="trailing" secondItem="7nc-s7-fAP" secondAttribute="trailing" constant="10" id="VAX-Q1-SOJ"/>
+                            <constraint firstItem="2fO-df-SLp" firstAttribute="bottom" secondItem="j81-r7-24K" secondAttribute="bottom" id="ajc-ao-U7D"/>
+                            <constraint firstItem="7nc-s7-fAP" firstAttribute="leading" secondItem="j81-r7-24K" secondAttribute="leading" constant="10" id="f3y-bW-4nZ"/>
+                            <constraint firstItem="2fO-df-SLp" firstAttribute="leading" secondItem="j81-r7-24K" secondAttribute="leading" constant="10" id="rQu-zc-qSk"/>
+                            <constraint firstItem="2fO-df-SLp" firstAttribute="top" secondItem="7nc-s7-fAP" secondAttribute="bottom" constant="8" symbolic="YES" id="wWF-EF-F2D"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ShT-u1-jKi"/>
+                    <tabBarItem key="tabBarItem" title="Правила" image="book" catalog="system" id="ShT-u1-jKi"/>
+                    <connections>
+                        <outlet property="rulesTittle" destination="7nc-s7-fAP" id="wig-4O-tUl"/>
+                        <outlet property="textView" destination="2fO-df-SLp" id="AbD-N2-OD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pw9-i8-E3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013" y="812"/>
+            <point key="canvasLocation" x="2011.594202898551" y="811.60714285714278"/>
         </scene>
-        <!--Item-->
+        <!--Бронирование-->
         <scene sceneID="WXc-VX-i2W">
             <objects>
                 <viewController id="2dG-m5-rt7" customClass="BookingViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,13 +154,13 @@
                         <viewLayoutGuide key="safeArea" id="SL0-nW-qHb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1oh-VB-dXe"/>
+                    <tabBarItem key="tabBarItem" title="Бронирование" image="calendar" catalog="system" id="1oh-VB-dXe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxm-IO-Q8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2789" y="812"/>
         </scene>
-        <!--Item-->
+        <!--Профиль-->
         <scene sceneID="uOP-ek-fRP">
             <objects>
                 <viewController id="u4Z-7Y-cqN" customClass="ProfileViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,13 +170,13 @@
                         <viewLayoutGuide key="safeArea" id="jY3-SK-0oA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zYo-aa-Mu6"/>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.circle" catalog="system" id="zYo-aa-Mu6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STt-gc-Srs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3590" y="799"/>
+            <point key="canvasLocation" x="3590" y="812"/>
         </scene>
-        <!--Item-->
+        <!--Контакты-->
         <scene sceneID="jyB-4A-o6Y">
             <objects>
                 <viewController id="P4H-QQ-OMx" customClass="ContactsViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +186,7 @@
                         <viewLayoutGuide key="safeArea" id="24p-sE-cZk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="d32-2i-f8U"/>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="d32-2i-f8U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-B7-UYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,15 +219,16 @@
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="79.6875"/>
         </scene>
-        <!--Freedom Tab Bar Controller-->
+        <!--Freedom-->
         <scene sceneID="x2D-Es-BIr">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ane-rt-7EG" customClass="FreedomTabBarController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="BWd-gR-nKh"/>
+                    <navigationItem key="navigationItem" title="Freedom" id="BWd-gR-nKh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NCc-pl-3rs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="s3q-7E-25F" kind="relationship" relationship="viewControllers" id="YmK-c7-g1o"/>
@@ -143,7 +244,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
