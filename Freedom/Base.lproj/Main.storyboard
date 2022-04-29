@@ -39,7 +39,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentInsetAdjustmentBehavior="scrollableAxes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2fO-df-SLp">
                                 <rect key="frame" x="10" y="117" width="394" height="696"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Правила являются публичной офертой. Любое лицо с момента бронирования помещения Фотостудии либо фактического начала пользования помещениями Фотостудии признается совершившим акцепт публичной оферты в полном объёме и обязуется следовать Правилам.
+                                <string key="text">Правила являются публичной офертой. Любое лицо с момента бронирования помещения Фотостудии либо фактического начала пользования помещениями Фотостудии признается совершившим акцепт публичной оферты в полном объёме и обязуется следовать Правилам.
 
 ОСНОВНЫЕ ПОЛОЖЕНИЯ.
 - студия работает по 100% предоплате;
@@ -110,7 +110,7 @@
 За порчу и поломку студийного оборудования и аксессуаров арендатор несёт полную материальную ответственность и возмещает убытки в размере и объёме, по согласованию с администрацией студии. 
 В случаях порчи оборудования, а конкретно студийных вспышек, арендатор возмещает полную стоимость согласно цены на текущий день. По окончании съёмки оборудование в обязательном порядке проверяется администратором на его целостность и работоспособность. 
 
-НЕЗНАНИЕ ПРАВИЛ НЕ ОСВОБОЖДАЕТ ВАС ОТ ОТВЕТСТВЕННОСТИ.</mutableString>
+НЕЗНАНИЕ ПРАВИЛ НЕ ОСВОБОЖДАЕТ ВАС ОТ ОТВЕТСТВЕННОСТИ.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -160,105 +160,124 @@
             </objects>
             <point key="canvasLocation" x="2789" y="812"/>
         </scene>
-        <!--Профиль-->
-        <scene sceneID="uOP-ek-fRP">
-            <objects>
-                <viewController id="u4Z-7Y-cqN" customClass="ProfileViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xsd-me-dme">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jY3-SK-0oA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Профиль" image="person.circle" catalog="system" id="zYo-aa-Mu6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="STt-gc-Srs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3590" y="812"/>
-        </scene>
         <!--Контакты-->
         <scene sceneID="jyB-4A-o6Y">
             <objects>
-                <viewController id="P4H-QQ-OMx" customClass="ContactsViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="P4H-QQ-OMx" customClass="ContactsViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BeT-m0-DMN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fja-fa-BZX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAt-D1-QOZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-MT-m5J">
-                                        <rect key="frame" x="110" y="12" width="194" height="36"/>
-                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="QMK-nv-R7l">
-                                        <rect key="frame" x="20" y="148" width="374" height="194.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xht-GZ-yzb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho4-v7-yhC">
-                                                <rect key="frame" x="102" y="0.0" width="170.5" height="42.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="WhatsApp">
-                                                            <attributes>
-                                                                <font key="NSFont" size="28" name="Copperplate-Bold"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="whatsAppAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="WxQ-0r-NSG"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUx-3L-IBg">
-                                                <rect key="frame" x="153.5" y="87.5" width="67" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                                <connections>
-                                                    <action selector="telegramAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="8Td-ex-daj"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvV-BJ-7xw">
-                                                <rect key="frame" x="153.5" y="163.5" width="67" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                                <connections>
-                                                    <action selector="vkAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="ZdH-eG-fXV"/>
-                                                </connections>
-                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tb-pj-ghO">
+                                                <rect key="frame" x="10" y="50" width="394" height="36"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="COb-kP-EgR">
+                                                <rect key="frame" x="10" y="186" width="394" height="263"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bai-5o-yYd">
+                                                        <rect key="frame" x="123.5" y="0.0" width="147" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="WhatsApp">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="whatsAppAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="mzc-9P-y1B"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKX-wd-VjX">
+                                                        <rect key="frame" x="127" y="111" width="140" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Telegram">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="telegramAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="nLY-3f-cNO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-Kk-4i5">
+                                                        <rect key="frame" x="177.5" y="222" width="39" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="VK">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="vkAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="vq6-Y0-FLk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес: Королева 40 к1, 2 этаж, офис 221" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irg-Uo-9ME">
+                                                <rect key="frame" x="10" y="519" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон: +7(983)123-1443" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1f-Yq-gjj">
+                                                <rect key="frame" x="10" y="630" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstItem="COb-kP-EgR" firstAttribute="top" secondItem="3tb-pj-ghO" secondAttribute="bottom" constant="100" id="2yf-LS-JLu"/>
+                                            <constraint firstAttribute="trailing" secondItem="N1f-Yq-gjj" secondAttribute="trailing" constant="10" id="489-X2-bhn"/>
+                                            <constraint firstItem="N1f-Yq-gjj" firstAttribute="top" secondItem="irg-Uo-9ME" secondAttribute="bottom" constant="70" id="FxS-pm-t5y"/>
+                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="LJD-1R-vtQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="COb-kP-EgR" secondAttribute="trailing" constant="10" id="LhA-sQ-Vlc"/>
+                                            <constraint firstAttribute="trailing" secondItem="irg-Uo-9ME" secondAttribute="trailing" constant="10" id="P1J-rE-gJ9"/>
+                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="top" secondItem="Xht-GZ-yzb" secondAttribute="top" constant="50" id="XP1-rS-spW"/>
+                                            <constraint firstItem="COb-kP-EgR" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="Zto-PO-1tc"/>
+                                            <constraint firstItem="irg-Uo-9ME" firstAttribute="top" secondItem="COb-kP-EgR" secondAttribute="bottom" constant="70" id="dD2-f6-u3r"/>
+                                            <constraint firstAttribute="trailing" secondItem="3tb-pj-ghO" secondAttribute="trailing" constant="10" id="eRp-7F-KEY"/>
+                                            <constraint firstItem="irg-Uo-9ME" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="mMX-g1-IBf"/>
+                                            <constraint firstItem="N1f-Yq-gjj" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="uz7-0i-Fxk"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QMK-nv-R7l" firstAttribute="leading" secondItem="8kY-mf-K6h" secondAttribute="leading" constant="20" id="37z-au-enz"/>
-                                    <constraint firstItem="8kY-mf-K6h" firstAttribute="trailing" secondItem="g0D-MT-m5J" secondAttribute="trailing" constant="110" id="O6j-uX-2uq"/>
-                                    <constraint firstItem="g0D-MT-m5J" firstAttribute="top" secondItem="8kY-mf-K6h" secondAttribute="top" constant="100" id="h9Z-tq-wjq"/>
-                                    <constraint firstItem="g0D-MT-m5J" firstAttribute="leading" secondItem="8kY-mf-K6h" secondAttribute="leading" constant="110" id="i7k-Hi-qvE"/>
-                                    <constraint firstItem="QMK-nv-R7l" firstAttribute="top" secondItem="g0D-MT-m5J" secondAttribute="bottom" constant="100" id="t3F-de-hC3"/>
-                                    <constraint firstItem="8kY-mf-K6h" firstAttribute="trailing" secondItem="QMK-nv-R7l" secondAttribute="trailing" constant="20" id="yYe-yq-opw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xht-GZ-yzb" secondAttribute="bottom" id="5Af-rb-doS"/>
+                                    <constraint firstItem="Xht-GZ-yzb" firstAttribute="leading" secondItem="bAt-D1-QOZ" secondAttribute="leading" id="ERT-tl-bMc"/>
+                                    <constraint firstItem="Xht-GZ-yzb" firstAttribute="width" secondItem="bAt-D1-QOZ" secondAttribute="width" id="OGX-2H-WlD"/>
+                                    <constraint firstItem="Xht-GZ-yzb" firstAttribute="height" secondItem="bAt-D1-QOZ" secondAttribute="height" id="PDL-uM-tV6"/>
+                                    <constraint firstItem="Xht-GZ-yzb" firstAttribute="top" secondItem="bAt-D1-QOZ" secondAttribute="top" id="YuX-ww-hPz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xht-GZ-yzb" secondAttribute="trailing" id="cld-yv-Dxl"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="QRK-Gc-w6O"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="8kY-mf-K6h"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="24p-sE-cZk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="24p-sE-cZk" firstAttribute="bottom" secondItem="bAt-D1-QOZ" secondAttribute="bottom" id="LqG-Jb-v1S"/>
+                            <constraint firstItem="bAt-D1-QOZ" firstAttribute="top" secondItem="24p-sE-cZk" secondAttribute="top" id="Uf9-eU-6qD"/>
+                            <constraint firstItem="24p-sE-cZk" firstAttribute="trailing" secondItem="bAt-D1-QOZ" secondAttribute="trailing" id="eyq-SS-RgJ"/>
+                            <constraint firstItem="bAt-D1-QOZ" firstAttribute="leading" secondItem="24p-sE-cZk" secondAttribute="leading" id="hEk-E1-47B"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="d32-2i-f8U"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="telegramButton" destination="nUx-3L-IBg" id="nOe-kV-RWs"/>
-                        <outlet property="vkButton" destination="ZvV-BJ-7xw" id="zmC-BJ-PzN"/>
-                        <outlet property="whatsAppButton" destination="ho4-v7-yhC" id="gOh-k0-SDc"/>
+                        <outlet property="contentView" destination="Xht-GZ-yzb" id="RRB-AO-C4G"/>
+                        <outlet property="telegramButton" destination="qKX-wd-VjX" id="0pg-Qi-QoR"/>
+                        <outlet property="vkButton" destination="1HW-Kk-4i5" id="fIy-xv-wEr"/>
+                        <outlet property="whatsAppButton" destination="Bai-5o-yYd" id="7Ol-hh-2Ug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-B7-UYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4388.4057971014499" y="796.875"/>
+            <point key="canvasLocation" x="4386.9565217391309" y="811.60714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y0c-Qr-3MZ">
@@ -300,7 +319,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="s3q-7E-25F" kind="relationship" relationship="viewControllers" id="YmK-c7-g1o"/>
-                        <segue destination="u4Z-7Y-cqN" kind="relationship" relationship="viewControllers" id="MPv-6x-wwa"/>
                         <segue destination="P4H-QQ-OMx" kind="relationship" relationship="viewControllers" id="YsA-Fj-a4X"/>
                         <segue destination="2dG-m5-rt7" kind="relationship" relationship="viewControllers" id="Y4C-fp-sqg"/>
                         <segue destination="WBo-mG-RHa" kind="relationship" relationship="viewControllers" id="Mda-ff-elW"/>
@@ -315,10 +333,12 @@
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

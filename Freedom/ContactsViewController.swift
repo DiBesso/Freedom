@@ -10,6 +10,7 @@ import UIKit
 class ContactsViewController: UIViewController, UITextViewDelegate {
 
     
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var whatsAppButton: UIButton!
     @IBOutlet weak var telegramButton: UIButton!
     @IBOutlet weak var vkButton: UIButton!
@@ -18,14 +19,13 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
-        setButtons()
+        contentView.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
     }
 
     
     @IBAction func whatsAppAction(_ sender: UIButton) {
         
-        guard let url = URL(string: "https://wa.me/+79833042806") else { return }
+        guard let url = URL(string: "https://wa.me/+79831231443") else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
@@ -39,14 +39,8 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
-    func setButtons() {
-        whatsAppButton.titleLabel?.font = UIFont(name: "Copperplate Bold", size: 28)
-        telegramButton.titleLabel?.text = "Telegram"
-        telegramButton.titleLabel?.font = UIFont(name: "Copperplate Bold", size: 28)
-        telegramButton.titleLabel?.textColor = .white
-        vkButton.titleLabel?.text = "VK"
-        vkButton.titleLabel?.font = UIFont(name: "Copperplate Bold", size: 28)
-        vkButton.titleLabel?.textColor = .white
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
+    
 }

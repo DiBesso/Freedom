@@ -11,7 +11,6 @@
 		A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844827E5CBE400A39589 /* HallCollectionView.swift */; };
 		A414844B27E5CD8B00A39589 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844A27E5CD8B00A39589 /* Model.swift */; };
 		A414844D27E5DAFD00A39589 /* HallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */; };
-		A423D63727F60BE700EB15A2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63627F60BE700EB15A2 /* ProfileViewController.swift */; };
 		A423D63927F60C2A00EB15A2 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */; };
 		A423D63B27F60D0900EB15A2 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63A27F60D0900EB15A2 /* BookingViewController.swift */; };
 		A423D63D27F60D4B00EB15A2 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */; };
@@ -28,7 +27,6 @@
 		A414844827E5CBE400A39589 /* HallCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionView.swift; sourceTree = "<group>"; };
 		A414844A27E5CD8B00A39589 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallCollectionViewCell.swift; sourceTree = "<group>"; };
-		A423D63627F60BE700EB15A2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		A423D63A27F60D0900EB15A2 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				A414844627E5C9CC00A39589 /* HallViewController.swift */,
 				A414844827E5CBE400A39589 /* HallCollectionView.swift */,
 				A414844C27E5DAFD00A39589 /* HallCollectionViewCell.swift */,
-				A423D63627F60BE700EB15A2 /* ProfileViewController.swift */,
 				A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */,
 				A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */,
 				A423D63A27F60D0900EB15A2 /* BookingViewController.swift */,
@@ -185,7 +182,6 @@
 				A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */,
 				A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */,
 				A423D63F27F60FB200EB15A2 /* FreedomTabBarController.swift in Sources */,
-				A423D63727F60BE700EB15A2 /* ProfileViewController.swift in Sources */,
 				A423D63927F60C2A00EB15A2 /* ContactsViewController.swift in Sources */,
 				A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */,
 				A414844727E5C9CC00A39589 /* HallViewController.swift in Sources */,
