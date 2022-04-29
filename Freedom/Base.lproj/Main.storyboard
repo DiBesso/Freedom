@@ -183,14 +183,46 @@
                     <view key="view" contentMode="scaleToFill" id="BeT-m0-DMN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fja-fa-BZX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho4-v7-yhC">
+                                        <rect key="frame" x="174" y="345" width="66" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Dmw-zX-T7X"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="waAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="lv0-AS-N1L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8kY-mf-K6h" firstAttribute="trailing" secondItem="ho4-v7-yhC" secondAttribute="trailing" constant="174" id="FLe-sQ-UT2"/>
+                                    <constraint firstItem="8kY-mf-K6h" firstAttribute="trailing" secondItem="ho4-v7-yhC" secondAttribute="trailing" constant="174" id="Gw3-dm-tPc"/>
+                                    <constraint firstItem="ho4-v7-yhC" firstAttribute="leading" secondItem="8kY-mf-K6h" secondAttribute="leading" constant="174" id="RTt-Wm-WiO"/>
+                                    <constraint firstItem="ho4-v7-yhC" firstAttribute="top" secondItem="8kY-mf-K6h" secondAttribute="top" constant="433" id="jaK-5Z-XIh"/>
+                                    <constraint firstItem="ho4-v7-yhC" firstAttribute="leading" secondItem="8kY-mf-K6h" secondAttribute="leading" constant="174" id="xM4-IP-GL9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="QRK-Gc-w6O"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8kY-mf-K6h"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="24p-sE-cZk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="d32-2i-f8U"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="waButton" destination="ho4-v7-yhC" id="5lt-6e-42y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-B7-UYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4390" y="797"/>
+            <point key="canvasLocation" x="4388.4057971014499" y="796.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y0c-Qr-3MZ">

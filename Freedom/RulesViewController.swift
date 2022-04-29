@@ -20,7 +20,11 @@ class RulesViewController: UIViewController, UITextViewDelegate {
         
         setupTextView()
         setupLabel()
+        
     }
+
+
+    
     func setupLabel() {
         rulesTittle.textAlignment = .center
         rulesTittle.text = "Правила фотостудии"

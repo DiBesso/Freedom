@@ -7,23 +7,28 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController, UITextViewDelegate {
 
+    
+    @IBOutlet weak var waButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func waAction(_ sender: UIButton) {
+        
+        guard let url = URL(string: "https://wa.me/+79833042806") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
-    */
+    
+    func hyperLink(originalText: String, hyperLink: String, url: String) {
 
+    }
+    
 }
