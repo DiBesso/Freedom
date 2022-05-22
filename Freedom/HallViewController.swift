@@ -21,7 +21,6 @@ class HallViewController: UIViewController {
         hallCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         hallCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         hallCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
-//        hallCollectionView.heightAnchor.constraint(equalToConstant: 500).isActive = true
         hallCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         
