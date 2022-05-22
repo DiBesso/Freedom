@@ -16,6 +16,7 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
         layout.scrollDirection = .horizontal
         super.init(frame: .zero, collectionViewLayout: layout)
         
+        
         delegate = self
         dataSource = self
         register(HallCollectionViewCell.self, forCellWithReuseIdentifier: HallCollectionViewCell.reuseId)

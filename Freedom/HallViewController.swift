@@ -14,8 +14,9 @@ class HallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
         view.addSubview(hallCollectionView)
+        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
+        
 
         hallCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         hallCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true

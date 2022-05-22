@@ -37,6 +37,7 @@ class HallCollectionViewCell: UICollectionViewCell {
     
     let priceLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -71,7 +72,7 @@ class HallCollectionViewCell: UICollectionViewCell {
         
         priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         priceLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-        priceLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 25).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 60).isActive = true
     }
     
     override func layoutSubviews() {

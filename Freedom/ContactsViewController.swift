@@ -14,12 +14,18 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var whatsAppButton: UIButton!
     @IBOutlet weak var telegramButton: UIButton!
     @IBOutlet weak var vkButton: UIButton!
+    @IBOutlet weak var adressButton: UIButton!
+    @IBOutlet weak var phoneTextView: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
+        
         contentView.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
+        
+//        setupTextView()
     }
 
     
@@ -39,8 +45,17 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    @IBAction func adressAction(_ sender: UIButton) {
+        guard let url = URL(string: "https://2gis.ru/novosibirsk/firm/70000001041127769?m=82.962139%2C55.058319%2F16.18")
+        else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+    
+//    func setupTextView () {
+//        phoneTextView.backgroundColor = self.view.backgroundColor
+//        phoneTextView.font = UIFont(name: "Copperplate", size: 28)
+//        phoneTextView.isEditable = false
+//        phoneTextView.textColor = .white
+//    }
     
 }

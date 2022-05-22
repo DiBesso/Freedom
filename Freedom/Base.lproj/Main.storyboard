@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Rpe-rd-ZWn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Freedom" id="tiP-6t-Vaw">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="3589.8550724637685" y="79.6875"/>
         </scene>
-        <!--Правила-->
+        <!--Freedom-->
         <scene sceneID="Dwt-2n-2sx">
             <objects>
                 <viewController id="WBo-mG-RHa" customClass="RulesViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
@@ -135,6 +135,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Правила" image="book" catalog="system" id="ShT-u1-jKi"/>
+                    <navigationItem key="navigationItem" title="Freedom" id="8qd-lc-Bdk"/>
                     <connections>
                         <outlet property="rulesTittle" destination="7nc-s7-fAP" id="wig-4O-tUl"/>
                         <outlet property="textView" destination="2fO-df-SLp" id="AbD-N2-OD8"/>
@@ -155,12 +156,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Бронирование" image="calendar" catalog="system" id="1oh-VB-dXe"/>
+                    <connections>
+                        <outlet property="tabBarItem" destination="1oh-VB-dXe" id="I78-Uq-5aT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxm-IO-Q8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2789" y="812"/>
         </scene>
-        <!--Контакты-->
+        <!--Freedom-->
         <scene sceneID="jyB-4A-o6Y">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="P4H-QQ-OMx" customClass="ContactsViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,11 +184,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="COb-kP-EgR">
-                                                <rect key="frame" x="10" y="186" width="394" height="263"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="COb-kP-EgR">
+                                                <rect key="frame" x="8" y="146" width="398" height="454"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bai-5o-yYd">
-                                                        <rect key="frame" x="123.5" y="0.0" width="147" height="41"/>
+                                                        <rect key="frame" x="125.5" y="0.0" width="147" height="41"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="WhatsApp">
@@ -195,7 +199,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKX-wd-VjX">
-                                                        <rect key="frame" x="127" y="111" width="140" height="41"/>
+                                                        <rect key="frame" x="129" y="101" width="140" height="41"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Telegram">
@@ -206,7 +210,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-Kk-4i5">
-                                                        <rect key="frame" x="177.5" y="222" width="39" height="41"/>
+                                                        <rect key="frame" x="179.5" y="202" width="39" height="41"/>
                                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="VK">
@@ -216,35 +220,35 @@
                                                             <action selector="vkAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="vq6-Y0-FLk"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2np-IA-FtW">
+                                                        <rect key="frame" x="154" y="303" width="90" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="28"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Адрес">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="adressAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="SkQ-y9-Vbm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="+7(983)123-1443" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pwx-b9-KDq">
+                                                        <rect key="frame" x="79" y="404" width="240" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес: Королева 40 к1, 2 этаж, офис 221" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irg-Uo-9ME">
-                                                <rect key="frame" x="10" y="519" width="394" height="41"/>
-                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон: +7(983)123-1443" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1f-Yq-gjj">
-                                                <rect key="frame" x="10" y="630" width="394" height="20.5"/>
-                                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
-                                            <constraint firstItem="COb-kP-EgR" firstAttribute="top" secondItem="3tb-pj-ghO" secondAttribute="bottom" constant="100" id="2yf-LS-JLu"/>
-                                            <constraint firstAttribute="trailing" secondItem="N1f-Yq-gjj" secondAttribute="trailing" constant="10" id="489-X2-bhn"/>
-                                            <constraint firstItem="N1f-Yq-gjj" firstAttribute="top" secondItem="irg-Uo-9ME" secondAttribute="bottom" constant="70" id="FxS-pm-t5y"/>
-                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="LJD-1R-vtQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="COb-kP-EgR" secondAttribute="trailing" constant="10" id="LhA-sQ-Vlc"/>
-                                            <constraint firstAttribute="trailing" secondItem="irg-Uo-9ME" secondAttribute="trailing" constant="10" id="P1J-rE-gJ9"/>
-                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="top" secondItem="Xht-GZ-yzb" secondAttribute="top" constant="50" id="XP1-rS-spW"/>
-                                            <constraint firstItem="COb-kP-EgR" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="Zto-PO-1tc"/>
-                                            <constraint firstItem="irg-Uo-9ME" firstAttribute="top" secondItem="COb-kP-EgR" secondAttribute="bottom" constant="70" id="dD2-f6-u3r"/>
-                                            <constraint firstAttribute="trailing" secondItem="3tb-pj-ghO" secondAttribute="trailing" constant="10" id="eRp-7F-KEY"/>
-                                            <constraint firstItem="irg-Uo-9ME" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="mMX-g1-IBf"/>
-                                            <constraint firstItem="N1f-Yq-gjj" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="uz7-0i-Fxk"/>
+                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="top" secondItem="Xht-GZ-yzb" secondAttribute="top" constant="50" id="34D-nk-z2V"/>
+                                            <constraint firstItem="COb-kP-EgR" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="8" id="CAs-Ri-fDn"/>
+                                            <constraint firstAttribute="trailing" secondItem="COb-kP-EgR" secondAttribute="trailing" constant="8" id="LIM-uJ-lRQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="3tb-pj-ghO" secondAttribute="trailing" constant="10" id="cpg-rA-44X"/>
+                                            <constraint firstItem="COb-kP-EgR" firstAttribute="top" secondItem="3tb-pj-ghO" secondAttribute="bottom" constant="60" id="kGU-uG-n7R"/>
+                                            <constraint firstItem="3tb-pj-ghO" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="pRN-7x-SWK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -268,7 +272,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="d32-2i-f8U"/>
+                    <navigationItem key="navigationItem" title="Freedom" id="w7I-Rq-nmo"/>
                     <connections>
+                        <outlet property="adressButton" destination="2np-IA-FtW" id="51j-Df-VTI"/>
                         <outlet property="contentView" destination="Xht-GZ-yzb" id="RRB-AO-C4G"/>
                         <outlet property="telegramButton" destination="qKX-wd-VjX" id="0pg-Qi-QoR"/>
                         <outlet property="vkButton" destination="1HW-Kk-4i5" id="fIy-xv-wEr"/>
@@ -277,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncW-B7-UYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4386.9565217391309" y="811.60714285714278"/>
+            <point key="canvasLocation" x="3773.913043478261" y="811.60714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y0c-Qr-3MZ">
@@ -298,6 +304,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bHK-T6-Ue6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="ane-rt-7EG" kind="relationship" relationship="rootViewController" id="cln-nI-gkq"/>
                     </connections>

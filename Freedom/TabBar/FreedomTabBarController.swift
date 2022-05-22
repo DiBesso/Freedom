@@ -16,4 +16,5 @@ class FreedomTabBarController: UITabBarController {
         tabBar.tintColor = .white
     }
     
+    
 }
