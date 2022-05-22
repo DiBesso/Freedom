@@ -185,7 +185,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="COb-kP-EgR">
-                                                <rect key="frame" x="8" y="146" width="398" height="454"/>
+                                                <rect key="frame" x="8" y="146" width="398" height="344"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bai-5o-yYd">
                                                         <rect key="frame" x="125.5" y="0.0" width="147" height="41"/>
@@ -231,23 +231,32 @@
                                                             <action selector="adressAction:" destination="P4H-QQ-OMx" eventType="touchUpInside" id="SkQ-y9-Vbm"/>
                                                         </connections>
                                                     </button>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="+7(983)123-1443" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pwx-b9-KDq">
-                                                        <rect key="frame" x="79" y="404" width="240" height="50"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <color key="textColor" systemColor="labelColor"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
                                                 </subviews>
                                             </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="+7(983)123-1443" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pwx-b9-KDq">
+                                                <rect key="frame" x="87" y="545" width="240" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2uS-TV-vjW"/>
+                                                    <constraint firstAttribute="width" constant="240" id="fhI-DT-O3Y"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
                                             <constraint firstItem="3tb-pj-ghO" firstAttribute="top" secondItem="Xht-GZ-yzb" secondAttribute="top" constant="50" id="34D-nk-z2V"/>
                                             <constraint firstItem="COb-kP-EgR" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="8" id="CAs-Ri-fDn"/>
                                             <constraint firstAttribute="trailing" secondItem="COb-kP-EgR" secondAttribute="trailing" constant="8" id="LIM-uJ-lRQ"/>
+                                            <constraint firstItem="Pwx-b9-KDq" firstAttribute="top" secondItem="COb-kP-EgR" secondAttribute="bottom" constant="55" id="LWQ-9i-su1"/>
                                             <constraint firstAttribute="trailing" secondItem="3tb-pj-ghO" secondAttribute="trailing" constant="10" id="cpg-rA-44X"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pwx-b9-KDq" secondAttribute="trailing" constant="87" id="dcB-IS-rcl"/>
                                             <constraint firstItem="COb-kP-EgR" firstAttribute="top" secondItem="3tb-pj-ghO" secondAttribute="bottom" constant="60" id="kGU-uG-n7R"/>
+                                            <constraint firstItem="Pwx-b9-KDq" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="87" id="lRp-Vb-OWT"/>
                                             <constraint firstItem="3tb-pj-ghO" firstAttribute="leading" secondItem="Xht-GZ-yzb" secondAttribute="leading" constant="10" id="pRN-7x-SWK"/>
                                         </constraints>
                                     </view>
@@ -276,6 +285,7 @@
                     <connections>
                         <outlet property="adressButton" destination="2np-IA-FtW" id="51j-Df-VTI"/>
                         <outlet property="contentView" destination="Xht-GZ-yzb" id="RRB-AO-C4G"/>
+                        <outlet property="phoneTextView" destination="Pwx-b9-KDq" id="9A5-D0-89o"/>
                         <outlet property="telegramButton" destination="qKX-wd-VjX" id="0pg-Qi-QoR"/>
                         <outlet property="vkButton" destination="1HW-Kk-4i5" id="fIy-xv-wEr"/>
                         <outlet property="whatsAppButton" destination="Bai-5o-yYd" id="7Ol-hh-2Ug"/>

@@ -25,7 +25,7 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
         
         contentView.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
         
-//        setupTextView()
+        setupTextView()
     }
 
     
@@ -51,11 +51,11 @@ class ContactsViewController: UIViewController, UITextViewDelegate {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
-//    func setupTextView () {
-//        phoneTextView.backgroundColor = self.view.backgroundColor
-//        phoneTextView.font = UIFont(name: "Copperplate", size: 28)
-//        phoneTextView.isEditable = false
-//        phoneTextView.textColor = .white
-//    }
+    func setupTextView () {
+        phoneTextView.backgroundColor = self.view.backgroundColor
+        phoneTextView.font = UIFont(name: "Copperplate", size: 26)
+        phoneTextView.isEditable = false
+        phoneTextView.textColor = .white
+    }
     
 }
