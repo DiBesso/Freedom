@@ -9,7 +9,7 @@ import UIKit
 
 class HallViewController: UIViewController {
     
-    private var hallCollectionView = HallCollectionView()
+    var hallCollectionView = HallCollectionView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,4 +28,9 @@ class HallViewController: UIViewController {
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = hallCollectionView.indexPathsForSelectedItems {
+            guard let balanceGalleryVC = segue.destination as? BalanceGalleryViewController else { return }
+    }
+    }
 }

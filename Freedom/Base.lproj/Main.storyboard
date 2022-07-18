@@ -23,10 +23,29 @@
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Freedom" id="v3Z-Mx-YdU"/>
+                    <connections>
+                        <segue destination="CJh-ai-glx" kind="show" identifier="balanceSegue" id="Ub2-Vf-XHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVo-Y9-4F4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3589.8550724637685" y="79.6875"/>
+        </scene>
+        <!--Balance Gallery View Controller-->
+        <scene sceneID="vbG-Rr-2TC">
+            <objects>
+                <viewController id="CJh-ai-glx" customClass="BalanceGalleryViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVn-9H-WA3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k2c-hn-0DF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GvS-nZ-MsP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnx-44-rmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4651" y="80"/>
         </scene>
         <!--Freedom-->
         <scene sceneID="Dwt-2n-2sx">

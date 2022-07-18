@@ -8,8 +8,8 @@
 import UIKit
 
 class RulesViewController: UIViewController, UITextViewDelegate {
-    @IBOutlet weak var rulesTittle: UILabel!
     
+    @IBOutlet weak var rulesTittle: UILabel!
     @IBOutlet weak var textView: UITextView!
     
     

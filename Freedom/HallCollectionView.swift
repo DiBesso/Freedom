@@ -10,7 +10,9 @@ import UIKit
 class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     var cells = [FreedomModel]()
+    var balanceGalleryViewController = BalanceGalleryViewController()
     
+
     init () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -44,10 +46,17 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
         
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            HallViewController().performSegue(withIdentifier: "balanceSegue", sender: self)
+    }
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.hallItemWidth, height: frame.height * 0.99)
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
