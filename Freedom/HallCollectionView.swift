@@ -10,7 +10,6 @@ import UIKit
 class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     var cells = [FreedomModel]()
-    var balanceGalleryViewController = BalanceGalleryViewController()
     
 
     init () {
@@ -43,14 +42,13 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
         cell.hallNameLabel.text = cells[indexPath.row].hallName
         cell.descriptionLabel.text = cells[indexPath.row].description
         cell.priceLabel.text = "Аренда: \(cells[indexPath.row].price)руб/час"
+        cell.moreButton.setTitle("Подробнее", for: .normal)
         
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            HallViewController().performSegue(withIdentifier: "balanceSegue", sender: self)
-    }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -12,7 +12,7 @@
         <!--Freedom-->
         <scene sceneID="UCJ-L1-b0A">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="s3q-7E-25F" customClass="HallViewController" customModule="Freedom" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="s3q-7E-25F" customClass="HallViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgp-FC-mjC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Freedom" id="v3Z-Mx-YdU"/>
                     <connections>
-                        <segue destination="CJh-ai-glx" kind="show" identifier="balanceSegue" id="Ub2-Vf-XHA"/>
+                        <segue destination="CJh-ai-glx" kind="modal" identifier="balanceSegue" id="PMz-oj-VUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVo-Y9-4F4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -34,7 +34,7 @@
         <!--Balance Gallery View Controller-->
         <scene sceneID="vbG-Rr-2TC">
             <objects>
-                <viewController id="CJh-ai-glx" customClass="BalanceGalleryViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="CJh-ai-glx" customClass="BalanceGalleryViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVn-9H-WA3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

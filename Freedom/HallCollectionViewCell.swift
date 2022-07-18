@@ -43,6 +43,15 @@ class HallCollectionViewCell: UICollectionViewCell {
         return label
     } ()
     
+    var moreButton: UIButton = {
+        let button = UIButton()
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(.blue, for: .normal)
+        button.contentHorizontalAlignment = .left
+        return button
+    } ()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -50,6 +59,7 @@ class HallCollectionViewCell: UICollectionViewCell {
         addSubview(hallNameLabel)
         addSubview(descriptionLabel)
         addSubview(priceLabel)
+        addSubview(moreButton)
         
         backgroundColor = .white
         
@@ -72,7 +82,11 @@ class HallCollectionViewCell: UICollectionViewCell {
         
         priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         priceLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-        priceLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 60).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40).isActive = true
+        
+        moreButton.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        moreButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
+        moreButton.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 20).isActive = true
     }
     
     override func layoutSubviews() {
