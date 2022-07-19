@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol HallCollectionProtocol: AnyObject {
+    func didSelect (_ item: Int)
+}
 class HallCollectionViewCell: UICollectionViewCell {
+    
+     var delegate: HallCollectionProtocol?
     
     static let reuseId = "HallCollectionViewCell"
     
@@ -50,6 +55,7 @@ class HallCollectionViewCell: UICollectionViewCell {
         button.setTitleColor(.blue, for: .normal)
         button.contentHorizontalAlignment = .left
         return button
+        
     } ()
     
     override init(frame: CGRect) {
@@ -68,17 +74,14 @@ class HallCollectionViewCell: UICollectionViewCell {
         hallImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
         hallImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1/2).isActive = true
         
-        
         hallNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         hallNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         hallNameLabel.topAnchor.constraint(equalTo: hallImageView.bottomAnchor, constant: 10).isActive = true
-        
         
         descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         descriptionLabel.topAnchor.constraint(equalTo: hallNameLabel.bottomAnchor, constant: 10).isActive = true
         descriptionLabel.widthAnchor.constraint(equalTo: widthAnchor,multiplier: 3/4, constant: 10).isActive = true
         descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        
         
         priceLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         priceLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
@@ -87,8 +90,11 @@ class HallCollectionViewCell: UICollectionViewCell {
         moreButton.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         moreButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         moreButton.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 20).isActive = true
+        
     }
-    
+//    func buttonTapped( sender: UIButton) {
+//        delegate?.collectionViewCell(self, buttonTapped: moreButton)
+//    }
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -98,11 +104,12 @@ class HallCollectionViewCell: UICollectionViewCell {
         layer.shadowOffset = CGSize(width: 5, height: 8)
         
         self.clipsToBounds = false
-        
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
 

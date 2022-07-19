@@ -45,5 +45,5 @@ struct Constants {
     static let rightDistanceToView: CGFloat = 15
     static let hallMinimumLineSpacing: CGFloat = 15
     static let hallItemWidth = (UIScreen.main.bounds.width - Constants.leftDistanceToView - Constants.rightDistanceToView - (Constants.hallMinimumLineSpacing / 2))
-
+    static let height = (UIScreen.main.bounds.height * 0.99)
 }

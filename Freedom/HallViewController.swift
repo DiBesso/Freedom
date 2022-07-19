@@ -7,13 +7,15 @@
 
 import UIKit
 
-class HallViewController: UIViewController { 
+class HallViewController: UIViewController {
     
     var hallCollectionView = HallCollectionView()
-
+    var cells = [FreedomModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        hallCollectionView.hallDelegate = self
+        
         view.addSubview(hallCollectionView)
         view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
         
@@ -26,14 +28,21 @@ class HallViewController: UIViewController {
         
         hallCollectionView.set(cells: FreedomModel.fetchHall())
     }
+
+}
+
+func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "balanceSegue" else { return }
+            guard let vc = segue.destination as? BalanceGalleryViewController else {return}
+        }
     
 
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let indexPath = hallCollectionView.indexPathsForSelectedItems {
-//            guard let balanceGalleryVC = segue.destination as? BalanceGalleryViewController else { return }
-//    }
-//    }
+extension HallViewController: HallCollectionProtocol {
+    func didSelect(_ item: Int) {
+        if item == 0 {
+        performSegue(withIdentifier: "balanceSegue", sender: self)
+        }
+    }
+
 }
-
-

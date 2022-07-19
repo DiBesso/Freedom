@@ -9,14 +9,14 @@ import UIKit
 
 class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    var cells = [FreedomModel]()
+    public weak var hallDelegate: HallCollectionProtocol?
     
+    var cells = [FreedomModel]()
 
     init () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         super.init(frame: .zero, collectionViewLayout: layout)
-        
         
         delegate = self
         dataSource = self
@@ -46,10 +46,11 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
         
         return cell
     }
-
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        print(indexPath.row)
+        hallDelegate?.didSelect(indexPath.row)
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: Constants.hallItemWidth, height: frame.height * 0.99)
