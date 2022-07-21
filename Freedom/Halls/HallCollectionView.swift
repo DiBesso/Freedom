@@ -16,6 +16,7 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
     init () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+
         super.init(frame: .zero, collectionViewLayout: layout)
         
         delegate = self
@@ -42,7 +43,6 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
         cell.hallNameLabel.text = cells[indexPath.row].hallName
         cell.descriptionLabel.text = cells[indexPath.row].description
         cell.priceLabel.text = "Аренда: \(cells[indexPath.row].price)руб/час"
-        cell.moreButton.setTitle("Подробнее", for: .normal)
         
         return cell
     }

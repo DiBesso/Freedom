@@ -13,36 +13,34 @@ class HallViewController: UIViewController {
     var cells = [FreedomModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         hallCollectionView.hallDelegate = self
         
         view.addSubview(hallCollectionView)
         view.backgroundColor = .init(red: 0.5176, green: 0.5176, blue: 0.5098, alpha: 1)
         
-
+        
         hallCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         hallCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         hallCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 130).isActive = true
         hallCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
-        
         hallCollectionView.set(cells: FreedomModel.fetchHall())
     }
-
+    
 }
 
 func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "balanceSegue" else { return }
-            guard let vc = segue.destination as? BalanceGalleryViewController else {return}
-        }
-    
+    guard segue.identifier == "balanceSegue" else { return }
+    guard segue.destination is BalanceGalleryCollectionViewController else {return}
+}
+
 
 
 extension HallViewController: HallCollectionProtocol {
     func didSelect(_ item: Int) {
         if item == 0 {
-        performSegue(withIdentifier: "balanceSegue", sender: self)
+            performSegue(withIdentifier: "balanceSegue", sender: self)
         }
     }
-
+    
 }

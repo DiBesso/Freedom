@@ -47,3 +47,7 @@ struct Constants {
     static let hallItemWidth = (UIScreen.main.bounds.width - Constants.leftDistanceToView - Constants.rightDistanceToView - (Constants.hallMinimumLineSpacing / 2))
     static let height = (UIScreen.main.bounds.height * 0.99)
 }
+
+struct Photos {
+    let balancePhotos = ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"]
+}
