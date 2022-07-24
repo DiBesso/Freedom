@@ -14,6 +14,7 @@ class HallViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         hallCollectionView.hallDelegate = self
         
         view.addSubview(hallCollectionView)
@@ -36,6 +37,9 @@ extension HallViewController: HallCollectionProtocol {
         }
         if item == 1 {
             performSegue(withIdentifier: "gatsbySegue", sender: self)
+        }
+        if item == 2 {
+            performSegue(withIdentifier: "simpleSegue", sender: self)
         }
     }
     

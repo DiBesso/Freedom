@@ -16,7 +16,8 @@ class HallCollectionView: UICollectionView, UICollectionViewDelegate, UICollecti
     init () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-
+        layout.estimatedItemSize = .zero
+        
         super.init(frame: .zero, collectionViewLayout: layout)
         
         delegate = self
