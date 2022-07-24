@@ -29,17 +29,13 @@ class HallViewController: UIViewController {
     
 }
 
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    guard segue.identifier == "balanceSegue" else { return }
-    guard segue.destination is BalanceGalleryCollectionViewController else {return}
-}
-
-
-
 extension HallViewController: HallCollectionProtocol {
     func didSelect(_ item: Int) {
         if item == 0 {
             performSegue(withIdentifier: "balanceSegue", sender: self)
+        }
+        if item == 1 {
+            performSegue(withIdentifier: "gatsbySegue", sender: self)
         }
     }
     

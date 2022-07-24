@@ -50,4 +50,12 @@ struct Constants {
 
 struct Photos {
     let balancePhotos = ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"]
+    let gatsbyPhotos = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "gatsby1"]
+}
+
+struct ConstantForCollectionView {
+    
+    let itemsPerRow: CGFloat = 2
+    let sectionInserts =  UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    
 }

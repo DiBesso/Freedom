@@ -1,17 +1,18 @@
 //
-//  BalanceGalleryViewController.swift
+//  GatsbyGalleryCollectionViewController.swift
 //  Freedom
 //
-//  Created by Дмитрий Бессонов on 16.07.2022.
+//  Created by Дмитрий Бессонов on 24.07.2022.
 //
 
 import UIKit
+
 private let reuseIdentifier = "Cell"
 
-class BalanceGalleryCollectionViewController: UICollectionViewController {
+class GatsbyGalleryCollectionViewController: UICollectionViewController {
     
-    var photos = Photos ()
-    var constant = ConstantForCollectionView ()
+    var photos = Photos()
+    var constant = ConstantForCollectionView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,41 +20,40 @@ class BalanceGalleryCollectionViewController: UICollectionViewController {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.estimatedItemSize = .zero
         
-        navigationController?.navigationBar.tintColor = .white
         
+        navigationController?.navigationBar.tintColor = .white
+
         
     }
-    
-    
+
+
     // MARK: UICollectionViewDataSource
-    
+
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
+  
         return 1
     }
-    
-    
+
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return photos.balancePhotos.count
+       
+        return photos.gatsbyPhotos.count
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "balanceCell", for: indexPath) as! BalanceCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gatsbyCell", for: indexPath) as! GatsbyCell
         
-        let imageName = photos.balancePhotos[indexPath.item]
+        let imageName = photos.gatsbyPhotos[indexPath.item]
         let image = UIImage(named: imageName)
-        
-        cell.balancePhotoImageView.image = image
-        
+
+        cell.gatsbyPhotoImageView.image = image
+    
         return cell
     }
-    
-    
-    
+
 }
 
-extension BalanceGalleryCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension GatsbyGalleryCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingWidth = constant.sectionInserts.left * (constant.itemsPerRow + 1)
