@@ -22,35 +22,35 @@ class GatsbyGalleryCollectionViewController: UICollectionViewController {
         
         
         navigationController?.navigationBar.tintColor = .white
-
+        
         
     }
-
-
+    
+    
     // MARK: UICollectionViewDataSource
-
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-  
+        
         return 1
     }
-
-
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       
+        
         return photos.gatsbyPhotos.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gatsbyCell", for: indexPath) as! GatsbyCell
         
         let imageName = photos.gatsbyPhotos[indexPath.item]
         let image = UIImage(named: imageName)
-
+        
         cell.gatsbyPhotoImageView.image = image
-    
+        
         return cell
     }
-
+    
 }
 
 extension GatsbyGalleryCollectionViewController: UICollectionViewDelegateFlowLayout {

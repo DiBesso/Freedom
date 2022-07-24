@@ -52,6 +52,7 @@ struct Photos {
     let balancePhotos = ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"]
     let gatsbyPhotos = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "gatsby1"]
     let simplePhotos = ["simple1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9"]
+    let fantasyPhotos = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13"]
 }
 
 struct ConstantForCollectionView {

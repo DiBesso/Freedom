@@ -1,5 +1,5 @@
 //
-//  SimpleCollectionViewController.swift
+//  FantasyGalleryCollectionViewController.swift
 //  Freedom
 //
 //  Created by Дмитрий Бессонов on 24.07.2022.
@@ -9,7 +9,8 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class SimpleGalleryCollectionViewController: UICollectionViewController {
+class FantasyGalleryCollectionViewController: UICollectionViewController {
+    
     
     var photos = Photos()
     var constant = ConstantForCollectionView()
@@ -23,9 +24,7 @@ class SimpleGalleryCollectionViewController: UICollectionViewController {
         
         navigationController?.navigationBar.tintColor = .white
         
-        
     }
-    
     
     // MARK: UICollectionViewDataSource
     
@@ -36,21 +35,22 @@ class SimpleGalleryCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return photos.simplePhotos.count
+        return photos.fantasyPhotos.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "simpleCell", for: indexPath) as! SimpleCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "fantasyCell", for: indexPath) as! FantasyCell
         
-        let imageName = photos.simplePhotos[indexPath.item]
+        let imageName = photos.fantasyPhotos[indexPath.item]
         let image = UIImage(named: imageName)
         
-        cell.simplePhotoImageView.image = image
+        cell.fantasyPhotoImageView.image = image
+        
         return cell
     }
-    
 }
-extension SimpleGalleryCollectionViewController: UICollectionViewDelegateFlowLayout {
+
+extension FantasyGalleryCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingWidth = constant.sectionInserts.left * (constant.itemsPerRow + 1)

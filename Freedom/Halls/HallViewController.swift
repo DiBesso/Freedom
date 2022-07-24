@@ -41,6 +41,9 @@ extension HallViewController: HallCollectionProtocol {
         if item == 2 {
             performSegue(withIdentifier: "simpleSegue", sender: self)
         }
+        if item == 3 {
+            performSegue(withIdentifier: "fantasySegue", sender: self)
+        }
     }
     
 }
