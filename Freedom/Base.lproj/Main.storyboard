@@ -169,6 +169,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="balancePhotoImageView" destination="HA7-fU-WDe" id="9fO-FL-k6C"/>
+                                    <segue destination="HRE-t9-BOu" kind="presentation" identifier="balancePhotoSegue" id="NJX-h7-0UR"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -182,6 +183,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOc-xW-VKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6401" y="80"/>
+        </scene>
+        <!--Balance Photo View Controller-->
+        <scene sceneID="9dH-Xc-lla">
+            <objects>
+                <viewController id="HRE-t9-BOu" customClass="BalancePhotoViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugm-LG-NKU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ni6-xK-tof">
+                                <rect key="frame" x="0.0" y="285.5" width="414" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="OBW-ps-wqn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ni-8g-tnD">
+                                <rect key="frame" x="184.5" y="737" width="45" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="HRE-t9-BOu" eventType="touchUpInside" id="Dut-jZ-qSI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aIg-yA-6pL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aIg-yA-6pL" firstAttribute="bottom" secondItem="9ni-8g-tnD" secondAttribute="bottom" constant="40" id="1fY-mg-GED"/>
+                            <constraint firstItem="aIg-yA-6pL" firstAttribute="trailing" secondItem="Ni6-xK-tof" secondAttribute="trailing" id="HON-XP-AXT"/>
+                            <constraint firstItem="Ni6-xK-tof" firstAttribute="leading" secondItem="aIg-yA-6pL" secondAttribute="leading" id="Uvk-y8-FHp"/>
+                            <constraint firstItem="Ni6-xK-tof" firstAttribute="centerY" secondItem="ugm-LG-NKU" secondAttribute="centerY" id="lIK-f5-fbZ"/>
+                            <constraint firstItem="9ni-8g-tnD" firstAttribute="centerX" secondItem="ugm-LG-NKU" secondAttribute="centerX" id="rRJ-uX-NDz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="Ni6-xK-tof" id="lAY-BW-ce4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27O-Hg-fV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7463.7681159420299" y="78.348214285714278"/>
         </scene>
         <!--Freedom-->
         <scene sceneID="Dwt-2n-2sx">
@@ -557,6 +600,7 @@
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

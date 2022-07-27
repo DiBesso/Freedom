@@ -24,6 +24,13 @@ class BalanceGalleryCollectionViewController: UICollectionViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "balancePhotoSegue" {
+            let bPhotoVC = segue.destination as! BalancePhotoViewController
+            let cell = sender as! BalanceCollectionViewCell
+            bPhotoVC.image = cell.balancePhotoImageView.image
+        }
+    }
     
     // MARK: UICollectionViewDataSource
     
