@@ -38,7 +38,7 @@
         <!--Freedom-->
         <scene sceneID="dud-Ov-5yn">
             <objects>
-                <collectionViewController id="FdN-Yu-dhO" customClass="GatsbyGalleryCollectionViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="gatsbyID" id="FdN-Yu-dhO" customClass="GatsbyGalleryCollectionViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Nkp-Fu-4cz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="gatsbyPhotoImageView" destination="n4M-hw-NTn" id="A1m-SV-W96"/>
+                                    <segue destination="HRE-t9-BOu" kind="presentation" identifier="gatsbyPhotoSegue" id="mja-lP-aYT"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -119,6 +120,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="simplePhotoImageView" destination="Aep-gq-Qsd" id="j4D-Po-Nu5"/>
+                                    <segue destination="HRE-t9-BOu" kind="presentation" identifier="simplePhotoSegue" id="hgS-Ug-DH8"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -184,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="6401" y="80"/>
         </scene>
-        <!--Balance Photo View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="9dH-Xc-lla">
             <objects>
-                <viewController id="HRE-t9-BOu" customClass="BalancePhotoViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HRE-t9-BOu" customClass="PhotoViewController" customModule="Freedom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugm-LG-NKU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27O-Hg-fV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7463.7681159420299" y="78.348214285714278"/>
+            <point key="canvasLocation" x="5512" y="523"/>
         </scene>
         <!--Freedom-->
         <scene sceneID="Dwt-2n-2sx">
@@ -528,6 +530,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="fantasyPhotoImageView" destination="ru0-X8-iVl" id="urb-cA-wiP"/>
+                                    <segue destination="HRE-t9-BOu" kind="presentation" identifier="fantasyPhotoSegue" id="q9O-fr-g4O"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -595,6 +598,9 @@
             <point key="canvasLocation" x="2679.7101449275365" y="79.6875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="q9O-fr-g4O"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="calendar" catalog="system" width="128" height="106"/>

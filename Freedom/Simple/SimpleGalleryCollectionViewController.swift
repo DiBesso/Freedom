@@ -26,6 +26,13 @@ class SimpleGalleryCollectionViewController: UICollectionViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "simplePhotoSegue" {
+            let bPhotoVC = segue.destination as! PhotoViewController
+            let cell = sender as! SimpleCell
+            bPhotoVC.image = cell.simplePhotoImageView.image
+        }
+    }
     
     // MARK: UICollectionViewDataSource
     

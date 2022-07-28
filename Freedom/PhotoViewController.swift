@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BalancePhotoViewController: UIViewController {
+class PhotoViewController: UIViewController {
 
     @IBOutlet weak var photoImageView: UIImageView!
     var image: UIImage?
@@ -23,5 +23,5 @@ class BalancePhotoViewController: UIViewController {
     @IBAction func shareAction(_ sender: Any) {
     }
     
-
+    
 }

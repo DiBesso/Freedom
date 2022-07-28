@@ -11,6 +11,7 @@ private let reuseIdentifier = "Cell"
 
 class GatsbyGalleryCollectionViewController: UICollectionViewController {
     
+    var index: Int = 0
     var photos = Photos()
     var constant = ConstantForCollectionView()
     
@@ -24,6 +25,14 @@ class GatsbyGalleryCollectionViewController: UICollectionViewController {
         navigationController?.navigationBar.tintColor = .white
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gatsbyPhotoSegue" {
+            let bPhotoVC = segue.destination as! PhotoViewController
+            let cell = sender as! GatsbyCell
+            bPhotoVC.image = cell.gatsbyPhotoImageView.image
+        }
     }
     
     

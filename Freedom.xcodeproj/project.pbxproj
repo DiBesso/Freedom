@@ -22,7 +22,7 @@
 		A43C02C5288D41CD001685BF /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C02C4288D41CD001685BF /* SimpleCell.swift */; };
 		A43C02C8288D49B8001685BF /* FantasyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C02C7288D49B8001685BF /* FantasyCell.swift */; };
 		A43C02CA288D49D4001685BF /* FantasyGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C02C9288D49D4001685BF /* FantasyGalleryCollectionViewController.swift */; };
-		A43C02CD28916555001685BF /* BalancePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C02CC28916555001685BF /* BalancePhotoViewController.swift */; };
+		A43C02CD28916555001685BF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C02CC28916555001685BF /* PhotoViewController.swift */; };
 		A48C92BC28828E8E005611BF /* BalanceGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48C92BB28828E8E005611BF /* BalanceGalleryCollectionViewController.swift */; };
 		A4F3F24627DF763F00C66DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */; };
 		A4F3F24827DF763F00C66DA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F3F24727DF763F00C66DA1 /* SceneDelegate.swift */; };
@@ -47,7 +47,7 @@
 		A43C02C4288D41CD001685BF /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
 		A43C02C7288D49B8001685BF /* FantasyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyCell.swift; sourceTree = "<group>"; };
 		A43C02C9288D49D4001685BF /* FantasyGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyGalleryCollectionViewController.swift; sourceTree = "<group>"; };
-		A43C02CC28916555001685BF /* BalancePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancePhotoViewController.swift; sourceTree = "<group>"; };
+		A43C02CC28916555001685BF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		A48C92BB28828E8E005611BF /* BalanceGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		A4F3F24227DF763F00C66DA1 /* Freedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F3F24527DF763F00C66DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +100,6 @@
 			children = (
 				A48C92BB28828E8E005611BF /* BalanceGalleryCollectionViewController.swift */,
 				A43C02AF288976E3001685BF /* BalanceCollectionViewCell.swift */,
-				A43C02CC28916555001685BF /* BalancePhotoViewController.swift */,
 			);
 			path = Balance;
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 				A423D63827F60C2A00EB15A2 /* ContactsViewController.swift */,
 				A423D63C27F60D4B00EB15A2 /* RulesViewController.swift */,
 				A423D63A27F60D0900EB15A2 /* BookingViewController.swift */,
+				A43C02CC28916555001685BF /* PhotoViewController.swift */,
 				A43C02CB288D49E2001685BF /* Fantasy */,
 				A43C02C6288D41D1001685BF /* Simple */,
 				A43C02BD288D1914001685BF /* Gatsby */,
@@ -257,7 +257,7 @@
 				A423D63927F60C2A00EB15A2 /* ContactsViewController.swift in Sources */,
 				A414844927E5CBE400A39589 /* HallCollectionView.swift in Sources */,
 				A414844727E5C9CC00A39589 /* HallViewController.swift in Sources */,
-				A43C02CD28916555001685BF /* BalancePhotoViewController.swift in Sources */,
+				A43C02CD28916555001685BF /* PhotoViewController.swift in Sources */,
 				A43C02C8288D49B8001685BF /* FantasyCell.swift in Sources */,
 				A43C02BA288D18D2001685BF /* GatsbyGalleryCollectionViewController.swift in Sources */,
 				A43C02BC288D190C001685BF /* GatsbyCell.swift in Sources */,

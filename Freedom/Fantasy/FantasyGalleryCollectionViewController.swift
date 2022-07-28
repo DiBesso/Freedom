@@ -26,6 +26,15 @@ class FantasyGalleryCollectionViewController: UICollectionViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fantasyPhotoSegue" {
+            let bPhotoVC = segue.destination as! PhotoViewController
+            let cell = sender as! FantasyCell
+            bPhotoVC.image = cell.fantasyPhotoImageView.image
+        }
+    }
+    
+    
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

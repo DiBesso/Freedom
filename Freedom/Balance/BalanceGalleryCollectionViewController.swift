@@ -26,7 +26,7 @@ class BalanceGalleryCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "balancePhotoSegue" {
-            let bPhotoVC = segue.destination as! BalancePhotoViewController
+            let bPhotoVC = segue.destination as! PhotoViewController
             let cell = sender as! BalanceCollectionViewCell
             bPhotoVC.image = cell.balancePhotoImageView.image
         }
@@ -46,6 +46,8 @@ class BalanceGalleryCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "balanceCell", for: indexPath) as! BalanceCollectionViewCell
         
         let imageName = photos.balancePhotos[indexPath.item]
@@ -55,7 +57,6 @@ class BalanceGalleryCollectionViewController: UICollectionViewController {
         
         return cell
     }
-    
     
     
 }
